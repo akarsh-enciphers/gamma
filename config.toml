@@ -1,5 +1,5 @@
 publishDir = "docs"
-baseurl = "https://github.com/akarsh-enciphers/gamma.git"
+baseurl = "https://akarsh-enciphers.github.io/gamma/"
 languageCode = "en-us"
 title = " Threads"
 theme = "blackburn"
