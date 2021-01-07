@@ -1,0 +1,90 @@
+{{ partial "header.html" . }}
+
+<div class="header">
+  <h1>Setting-up Threads</h1>
+</div>
+<div class="content">
+{{ range .Data.Pages.GroupByDate "2006" }}
+<br>
+<br>
+<br>
+<p>As we know Threads is a vulnerable lab application which look same like any other social media platform but the main moto is to solve the vulnerabilities present in it. So here is a guide on how to setup Threads application on your local system which is divided into two parts, one contain the information on how to install the  prerequisite before setting up the lab and the other part contains how to setup lab if you already have the both prerequisite installed in your system. </p>
+  <h2>How to setup Threads on your local system</h2>
+  <h3>Part-1:(Prerequisite for setting up lab)</h3>
+<p>There are only two prerequisite:</p>
+<ol>
+<li><b>Install Node.js for your system</b><br>Note: Check (npm -v and node -v) if the node is already installed then it’s not necessary to follow the node.js installation setup below.
+</li>
+<li><b>Install MongoDB</b></li>
+</ol>
+<h4>Node.js Setup</h4>
+<ol>
+<li>Go to your terminal</li>
+<li>$ sudo apt update</li>
+<li>$ cd ~</li>
+<li>$ curl -sL https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh</li>
+<li>$ sudo bash nodesource_setup.sh</li>
+<li>$ sudo apt install nodejs</li>
+<li>check the version after above commands with
+<ul><li>$ node -v</li><li>$ npm -v</li></ul></li>
+</ol>
+<h4>MongoDB setup</h4>
+<ol>
+<li>Open up your terminal</li>
+<li>$ wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -</li>
+<li>$ sudo add-apt-repository 'deb [arch=amd64] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse'</li>
+<li>$ sudo apt-get update</li>
+<li>$ sudo apt install mongodb-org</li>
+<li>$ sudo systemctl enable --now mongod</li>
+<li>To check if the MongoDb was installed succesfully use this command:<br> $ mongo --eval 'db.runCommand({ connectionStatus: 1 })'</li>
+<li>You must get a output like this or similar to this after the above command which means MongoDB was installed properly<br>
+<br><i style="color:black">
+MongoDB shell version v4.4.0 <br>
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb <br>
+Implicit session: session { "id" : UUID("2af3ab0e-2197-4152-8bd0-e33efffe1464") } <br>
+MongoDB server version: 4.4.0 <br>
+{ <br>
+  "authInfo" : { <br>
+    "authenticatedUsers" : [ ], <br>
+    "authenticatedUserRoles" : [ ] <br>
+  }, <br >
+  "ok" : 1 <br>
+} <br>
+</i>
+ </li>
+</ol>
+<h3>Part-2:(Setting up Threads app)</h3>
+<ol>
+<li><a href="https://github.com/enciphers/Threads">  Download the zip file for Threads application  by clicking on me. </a> </li>
+<li>Open up  your terminal and go to the folder where the zip file got downloaded.  </li>
+<li>Unzip the downloaded zip file for Threads application.</li>
+<li>Then use these commands to run the application server on your localhost:
+<ul>
+<li>$ cd enciphers_web-master</li>
+<li>$ npm install</li>
+<li>$ npm start</li>
+</ul></li>
+<li>After using the above commands you will see the message in the terminal like these given below which means that the application server has been connected to the MongoDB database.<br>
+<br><i style="color:black">
+> vulnerable_app@1.0.0 start /root/Downloads/enciphers_web-master<br>
+> nodemon server.js<br>
+
+[nodemon] 2.0.4 <br>
+[nodemon] to restart at any time, enter `rs`<br>
+[nodemon] watching path(s): *.*<br>
+[nodemon] watching extensions: js,mjs,json<br>
+[nodemon] starting `node server.js`<br>
+Connected to Database :: MongoDB<br>
+Connected to Moongose
+</i>
+</li>
+<br>
+<li>As the Threads application is running on port no. 3000 in you localhost. So go to your browser and search <b>http://localhost:3000/home</b> to open the threads application.</li>
+</ol>
+<br>
+<br>
+<h6>The best way to learn something is to play with it.</h6>  
+{{ end }}
+</div>
+
+{{ partial "footer.html" . }}

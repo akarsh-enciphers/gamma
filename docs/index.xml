@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title> Threads</title>
+    <link>https://github.com/akarsh-enciphers/gamma.git/</link>
+    <description>Recent content on  Threads</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2020. All rights reserved.</copyright>
+    <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://github.com/akarsh-enciphers/gamma.git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Migrate to Hugo from Jekyll</title>
+      <link>https://github.com/akarsh-enciphers/gamma.git/post/migrate-from-jekyll/</link>
+      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://github.com/akarsh-enciphers/gamma.git/post/migrate-from-jekyll/</guid>
+      <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
+▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become
+▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
+    </item>
+    
+    <item>
+      <title>About Threads</title>
+      <link>https://github.com/akarsh-enciphers/gamma.git/about/</link>
+      <pubDate>Wed, 16 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://github.com/akarsh-enciphers/gamma.git/about/</guid>
+      <description>It’s a NodeJs based application and it has also uses EJS as a frontend development templating engine with bootstrap and a mix of simple HTML, CSS is used to buit this web application.
+This web application comes up with various web application vulnerabilities just like some real web applications have and these vulnerabilities are the challenges on this web application which are need to be solved by its users. So this application act as a vulnerable web lab where users can have hands-on paractice on the different vulnerabilities present in it.</description>
+    </item>
+    
+    <item>
+      <title>Challenges present on Threads and there Solutions</title>
+      <link>https://github.com/akarsh-enciphers/gamma.git/contact/</link>
+      <pubDate>Wed, 16 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://github.com/akarsh-enciphers/gamma.git/contact/</guid>
+      <description>As we know there are many vulnerabilities present in the Threads web application so to find out and exploit each of these vulnerabilities are the challenges on Threads application.
+Note: (hints are provided under the heading of each challenges in a small paragraph, so read them at your own risks). Here is the list of all the challenges which a user can solve:
+Challenge-1:(Self-XSS) Hint: Insert a payload under the name of the account (could be done when registering an account or changing the existing account name for the profile section.</description>
+    </item>
+    
+    <item>
+      <title>Solution of all the challenges present on Threads application</title>
+      <link>https://github.com/akarsh-enciphers/gamma.git/solution/</link>
+      <pubDate>Wed, 16 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://github.com/akarsh-enciphers/gamma.git/solution/</guid>
+      <description>In this section we will talk about the solution to all the vulnerabilities present on the Threads application:
+Solution-1:(Self-XSS)  The self-xss is present in the name field of the profile section.So go to your profile first. In the name field enter a XSS payload .Like &amp;gt;&amp;lt;script&amp;gt;alert(1)&amp;lt;/script&amp;gt;. Click on update to update new credentials. After this you will see that the entered XSS payload getting executed on your browser and it will keep getting executed whenever you will visit you profile section through the icon given on home page.</description>
+    </item>
+    
+    <item>
+      <title>Upcominf features</title>
+      <link>https://github.com/akarsh-enciphers/gamma.git/new/</link>
+      <pubDate>Wed, 16 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://github.com/akarsh-enciphers/gamma.git/new/</guid>
+      <description>This is a page where we will tell you about what&amp;rsquo;s new coming in the next update Stay tuned uptil then</description>
+    </item>
+    
+    <item>
+      <title>(Hu)go Template Primer</title>
+      <link>https://github.com/akarsh-enciphers/gamma.git/post/goisforlovers/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://github.com/akarsh-enciphers/gamma.git/post/goisforlovers/</guid>
+      <description>Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
+This document is a brief primer on using go templates.</description>
+    </item>
+    
+    <item>
+      <title>Getting Started with Hugo</title>
+      <link>https://github.com/akarsh-enciphers/gamma.git/post/hugoisforlovers/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://github.com/akarsh-enciphers/gamma.git/post/hugoisforlovers/</guid>
+      <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
+Save it somewhere specific as we will be using it in the next step.
+More complete instructions are available at installing hugo
+Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
+Follow the following steps:
+ Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:</description>
+    </item>
+    
+  </channel>
+</rss>
