@@ -1,5 +1,5 @@
 +++
-title = "Upcominf features"
+title = "Upcoming features"
 date = "2020-12-16"
 sidemenu = "true"
 description = "Vulnerable web application developed by Enciphers"
