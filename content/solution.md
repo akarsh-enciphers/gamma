@@ -22,19 +22,26 @@ In this section we will talk about the  solution to all the vulnerabilities pres
 ### Hidden Directories
 
 1. We can use [Dirsearch tool](https://github.com/maurosoria/dirsearch)  to perform directory brute forcing on application to find the hidden end points of the application.
-2. You can install this tool by clicking on the dirsearch tool on the above point which will redirect you to the github page of that tool. Then  use this  command in your terminal ```python3 dirsearch.py -u <URL> -e <EXTENSIONS>```. Example : ** "python3 dirsearch.py -u http://localhost:3000 -e html,php"**.
-3. The http status code 200  is shown  on the directories like  /home , /management , /users/login.
+2. You can install this tool by clicking on the dirsearch tool on the above point which will redirect you to the github page of that tool. Then  use this  command in your terminal 
+```
+python3 dirsearch.py -u <URL> -e <EXTENSIONS>
+```
+ Example : 
+```
+python3 dirsearch.py -u http://localhost:3000 -e html,php
+```
+3. The http status code 200  is shown  on the directories like  */home , /management , /users/login*.
 4. These can be accessed by using the endpoint after the domain name in the URL in your browser.Like **http://localhost:3000/management**.
-5. In http://localhost:3000/management a  page opens up where an admin user can only login.The hard-coded mail for the admin account is ```test@test.com``` .You have to check whether an account with this mail to login as admin exist in the application or not.
+5. In http://localhost:3000/management a  page opens up where an admin user can only login.The hard-coded mail for the admin account is **test@test.com**. You have to check whether an account with this mail to login as admin exist in the application or not.
 
 ### Cross-site Request Forgery(CSRF)
 
 1. So Threads application is CSRF vulnerable so we can change many things like password,name etc of a victim account just by sending him a malicious html file performing some actions  and if he opens it  then there will be changes in his account without him knowing about it.
 2. Like here we can take an example of changing a user's password. So what we will be going to do as an attacker is to  create a html file which will have an action for changing password for that user. So when the victim will open up that html file his password will get changed.
 3. First just log in as a user. I have logged in as user3 whose password is currently “user”.
-4. Now as we have logged in as this user(user3) let’s try  changing the password through user account only on threads app. So basically like I am user3 right now and I want to change my password to “user@123”. So I will just update it in my profile section. If I check this request going out of my browser for changing password I get to know that for updating the password the application is using the  ‘POST’ request.
+4. Now as we have logged in as this user(user3) let’s try  changing the password through user account only on threads app. So basically like I am user3 right now and I want to change my password to “user@123”. So I will just update it in my profile section. If I check this request going out of my browser for changing password I get to know that for updating the password the application is using the  **POST** request.
 5. So currently my user3 has the password ‘user@123’.
-6. As you can see in your outgoing request  for  changing the password the request going out is the  ‘POST’ request. Also it was using ‘password’ and ‘confirm_password’ as the hidden  parameters which we knew  while updating the password from the  request going out of our browser. 
+6. As you can see in your outgoing request  for  changing the password the request going out is the  ‘POST’ request. Also it was using **password** and **confirm_password** as the hidden  parameters which we knew  while updating the password from the  request going out of our browser. 
 7. So as an attacker we know that the http request which will be sent through the browser is a ‘POST’  request to make changes in  the profile section. So now what we will be going to do is make an html document which will perform the action of changing the password when it will be executed. 
 8. So the html document for changing the password should contain fields like:
 
@@ -70,7 +77,7 @@ In this section we will talk about the  solution to all the vulnerabilities pres
 
 ### MongoDB Injection
 
-1. The mongoDB injection is present inside the ‘search bar’ of the threads application.
+1. The mongoDB injection is present inside the **search bar** of the threads application.
 2. When you write any username on the search bar and search for it then it passes the query searching for the user with the exact same name in its database. If there is the user present with the exact same name then it will show details about it on your screen. 
 
 
@@ -96,7 +103,7 @@ In this section we will talk about the  solution to all the vulnerabilities pres
 1. So there is a simple ssrf which is present in the profile section of this application under the url field which is used for uploading an image via url.
 2. So the /etc/passwd file is leaking which we have to find out.The /etc/passwd file on Unix systems contains password information. An attacker who has accessed the etc/passwd file may attempt a brute force attack of all passwords on the system. An attacker may attempt to gain access to the etc/passwd file through HTTP, FTP, or SMB. Typically this is done through one of the CGI scripts installed on the server, so this event may be seen in conjunction with other events of that type.
 3. So go to your profile section the last field the URL on is used to upload an image via URL.
-4. So now let’s use the file protocol on this field and try to get /etc/passwd file from the server. Use file:///etc/passwd on the url field to fetch the file from the server.
+4. So now let’s use the file protocol on this field and try to get /etc/passwd file from the server. Use **file:///etc/passwd** on the url field to fetch the file from the server.
 5. Update this and open your profile section again and you will see that  in the image section there is no image because obviously that was not an url for uploading an image.
 6. Now save that image by doing right click on it and then clicking on view image button.
 7. Open your terminal and go to where you have saved that image and open that image file using the nano command “nano [file name]”.
@@ -104,7 +111,10 @@ In this section we will talk about the  solution to all the vulnerabilities pres
 
 ### Stored-XSS
 
-1. This XSS is present inside the profile section inside the website field. It is a stored XSS which is only executable when seen in an unauthenticated state. So first let’s go to the  profile section and put a simple javascript XSS payload inside the website field. XSS payload= **`“><script>alert(“Hacker”)</script>"`**.
+1. This XSS is present inside the profile section inside the website field. It is a stored XSS which is only executable when seen in an unauthenticated state. So first let’s go to the  profile section and put a simple javascript XSS payload inside the website field. XSS payload= 
+```
+><script>alert(“Hacker”)</script>
+```
 2. Update the profile and now copy the url for this page shown in your browser.
 3. After copying open a new private window and paste this url in your browser and enter.
 4. As you can see the XSS has been executed when we visited from an unauthenticated state.
@@ -122,13 +132,16 @@ In this section we will talk about the  solution to all the vulnerabilities pres
 6. The JWT token is divided in three parts: algo,payload,signature.
 7. So basically we have to find out the secret key used in this token in the signature section because the new token which we will make it for the unauthorized user to access the admin section should  have the same signature .
 8. The application matches the signature with the signature present on the server side to give access to our unauthorized user. Mainly  we have to fool the application showing them that we are an admin user  and we are entering as an admin.
-9. To crack the secret key inside this token you can use this tool [JWT secret key cracking tool](https://github.com/ticarpi/jwt_tool/blob/master/jwt_tool.py) . Click on the link provided and install it in your system.
+9. To crack the secret key inside this token you can use this tool [JWT secret key cracking tool](https://github.com/ticarpi/jwt_tool/blob/master/jwt_tool.py) . Click on the link provided and install the tool  in your system.
 10. To do brute forcing we need a wordlist file (where many passwords are given) which we can use for getting the secret key. So for this application the wordlist file is given on Enciphers github visit this link provided  and save this file[Password file](https://github.com/enciphers/WebHacking-Training-Resources/blob/master/jwt-wordlist). Save this file with any  name in your system  like `passwd.txt`.
 11. Now   use this tool to find the secret key. Go to your terminal and open wherever you installed that tool. Syntax of the  command is:
-**“python3 jwt_tool.py  [jwt token you got on your BurpSuite] -C -d  [the wordlist file you saved]”**.
+```
+python3 jwt_tool.py  [jwt token you got on your BurpSuite] -C -d  [the wordlist file you saved]
+```
 12. The command is  example(according to the jwt token I got and the wordlist file I saved with the name of passwd.txt ):
-
- **“python3 jwt_tool.py eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFiaGluYXZAZW5jaXBoZXJzLmNvbSIsImlhdCI6MTYwNDY1OTIwNiwiZXhwIjoxNjA0NjY5MjA2fQ.2CrCcllttd02ktDrnUlUFiWj-oHxd4HXvf20yiYAo1M -C -d passwd.txt”**.
+```
+python3 jwt_tool.py eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFiaGluYXZAZW5jaXBoZXJzLmNvbSIsImlhdCI6MTYwNDY1OTIwNiwiZXhwIjoxNjA0NjY5MjA2fQ.2CrCcllttd02ktDrnUlUFiWj-oHxd4HXvf20yiYAo1M -C -d passwd.txt
+```
 
 13. As you can see the secret key for the token is **thr3@ds@000**. Use this key in this website [JWT.io](https://jwt.io/)  to encode a new token for your account(unauthorized user). Then use that token while logging in on the management page with your account. You will get the access with your account in the management section.
 
