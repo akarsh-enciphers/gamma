@@ -13,7 +13,8 @@ In this section we will talk about the  solution to all the vulnerabilities pres
 ### Self-XSS
 
 1. The self-xss is present in the name field of the profile section.So go to your profile first:
-![alt text](./images/lab.png)
+![alt text](https://raw.githubusercontent.com/akarsh-enciphers/gamma/master/images/selfxss1.png)
+
 2. In the name field  enter a XSS payload .Like: 
 ```
 ><script>alert(1)</script>
