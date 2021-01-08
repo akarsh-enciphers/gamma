@@ -76,7 +76,7 @@ Stay tuned uptil then
 ![Alt text](https://raw.githubusercontent.com/akarsh-enciphers/gamma/master/images/lab.png=500x)
 
 3100.
-![Alt text](https://raw.githubusercontent.com/akarsh-enciphers/gamma/master/images/lab.png =750x)
+![Alt text](https://raw.githubusercontent.com/akarsh-enciphers/gamma/master/images/lab.png=750)
 
 4100.
 ![Alt text](https://raw.githubusercontent.com/akarsh-enciphers/gamma/master/images/lab.png =750x450)
@@ -90,5 +90,14 @@ Stay tuned uptil then
 
  <img src="https://raw.githubusercontent.com/akarsh-enciphers/gamma/master/images/lab.png" alt="sa" width="500;" />
 
+
+
+4500.
+![<img src:"https://raw.githubusercontent.com/akarsh-enciphers/gamma/master/images/lab.png">](https://raw.githubusercontent.com/akarsh-enciphers/gamma/master/images/lab.png)
+
+
+
+24500.
+![<img src:"https://raw.githubusercontent.com/akarsh-enciphers/gamma/master/images/lab.png" alt="jadu" width="500" height="500"> ](https://raw.githubusercontent.com/akarsh-enciphers/gamma/master/images/lab.png)
 
 
