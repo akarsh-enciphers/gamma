@@ -12,7 +12,8 @@ In this section we will talk about the  solution to all the vulnerabilities pres
 
 ### Self-XSS
 
-1. The self-xss is present in the name field of the profile section.So go to your profile first.
+1. The self-xss is present in the name field of the profile section.So go to your profile first:
+![alt text](lab.png)
 2. In the name field  enter a XSS payload .Like: 
 ```
 ><script>alert(1)</script>
@@ -124,9 +125,9 @@ python3 dirsearch.py -u http://localhost:3000 -e html,php
 
 ### JWT Authentication
 
-1. So basically first you have to check whether there is an  user account with email `test@test.com` with password ‘123’ is present  because that is the hardcoded email.So first make sure that an account exists with the above email id and then try to forge the token.
+1. So basically first you have to check whether there is an  user account with email **test@test.com** with password **123** is present  because that is the hardcoded email.So first make sure that an account exists with the above email id and then try to forge the token.
 2. There is a /management page which has an authentication system which works via JWT API .
-3. Visit this management page in the application  and sign in as `test@test.com email`. Capture this sign-in request  going out of your browser with the  BurpSuite proxy.
+3. Visit this management page in the application  and sign in as `test@test.com`. Capture this sign-in request  going out of your browser with the  BurpSuite proxy.
 4. Open the proxy tab in your BurpSuite to check the outgoing request.Copy this request and send it to the repeater.
 5. In the repeater tab send that request to check out the response for that request. As you can see in the response section you have got the token written with green ink. Now copy that token and send it to [jwt.io](https://jwt.io/ ). 
 6. The JWT token is divided in three parts: algo,payload,signature.

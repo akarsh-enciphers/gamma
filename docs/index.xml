@@ -46,7 +46,7 @@ Note: (hint on how to solve the challenge is provided under the heading of each 
       
       <guid>https://akarsh-enciphers.github.io/gamma/solution/</guid>
       <description>In this section we will talk about the solution to all the vulnerabilities present on the Threads application:
-Low severity challenges Self-XSS  The self-xss is present in the name field of the profile section.So go to your profile first. In the name field enter a XSS payload .Like:  &amp;gt;&amp;lt;script&amp;gt;alert(1)&amp;lt;/script&amp;gt; Click on update to update new credentials. After this you will see that the entered XSS payload getting executed on your browser and it will keep getting executed whenever you will visit you profile section through the icon given on home page.</description>
+Low severity challenges Self-XSS  The self-xss is present in the name field of the profile section.So go to your profile first:  In the name field enter a XSS payload .Like:  &amp;gt;&amp;lt;script&amp;gt;alert(1)&amp;lt;/script&amp;gt; Click on update to update new credentials. After this you will see that the entered XSS payload getting executed on your browser and it will keep getting executed whenever you will visit you profile section through the icon given on home page.</description>
     </item>
     
     <item>
