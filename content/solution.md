@@ -1,5 +1,5 @@
 +++
-title = "Solution of all the challenges present on Threads application"
+title = "Solution of the Challenges"
 date = "2020-12-16"
 sidemenu = "true"
 description = "A vulnerable web application developed by Enciphers"
@@ -13,7 +13,7 @@ In this section we will talk about the  solution to all the vulnerabilities pres
 ### Self-XSS
 
 1. The self-xss is present in the name field of the profile section.So go to your profile first.
-2. In the name field  enter a XSS payload .Like **`><script>alert(1)</script>`**.
+2. In the name field  enter a XSS payload .Like **```><script>alert(1)</script>```**.
 3. Click on update to update new credentials. After this you will see that the entered XSS payload getting  executed on your browser and it will keep getting executed whenever you will visit you profile section through the icon given on home page.
 
 ### Hidden Directories
@@ -35,21 +35,23 @@ In this section we will talk about the  solution to all the vulnerabilities pres
 7. So as an attacker we know that the http request which will be sent through the browser is a ‘POST’  request to make changes in  the profile section. So now what we will be going to do is make an html document which will perform the action of changing the password when it will be executed. 
 8. So the html document for changing the password should contain fields like:
 
-**`<html>`**
+```
+<html>
 
-**`<body onload='document.csrf.submit()'>`**
+<body onload='document.csrf.submit()'>
 
-**`<form action='http://localhost:3000/users/update/5fa16bd0dd4e0066a3bed613' name='csrf' method='POST'>`**
+<form action='http://localhost:3000/users/update/5fa16bd0dd4e0066a3bed613' name='csrf' method='POST'>
 
-**`<input type='hidden' name='password' value='1'>`**
+<input type='hidden' name='password' value='1'>
 
-**`<input type='hidden' name='confirm_password' value='1'>`**
+<input type='hidden' name='confirm_password' value='1'>
 
-**`</form>`**
+</form>
 
-**`</body>`**
+</body>
 
-**`</html>`**
+</html>
+```
 
 9. Here in this html document the body tag will load and submit this document, the form tag is performing the action on the profile of the user whose UID is mentioned and the action which which is to be performed is of changing the password value mentioned in the hidden parameters(password,confirm_password).
 10. So as you can see in this html document we have used the form tag which will be  performing the action on ‘user3’ profile and the action which it will be performing is of changing the password of ‘user3’ to ‘1’.  Save the html document with .html extension.

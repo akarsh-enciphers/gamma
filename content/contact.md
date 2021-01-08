@@ -1,5 +1,5 @@
 +++
-title = "Challenges present on Threads and there Solutions"
+title = "Challenges on Threads"
 date = "2020-12-16"
 sidemenu = "true"
 description = "Developed by Enciphers"
