@@ -69,3 +69,14 @@ Stay tuned uptil then
 
 
 
+100.
+![Alt text](https://raw.githubusercontent.com/akarsh-enciphers/gamma/master/images/lab.png =250x)
+100.
+![Alt text](https://raw.githubusercontent.com/akarsh-enciphers/gamma/master/images/lab.png =500x)
+100.
+![Alt text](https://raw.githubusercontent.com/akarsh-enciphers/gamma/master/images/lab.png =750x)
+100.
+![Alt text](https://raw.githubusercontent.com/akarsh-enciphers/gamma/master/images/lab.png =750x450)
+
+
+
