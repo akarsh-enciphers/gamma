@@ -35,9 +35,8 @@ This web application comes up with various web application vulnerabilities just 
       <pubDate>Wed, 16 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://akarsh-enciphers.github.io/gamma/contact/</guid>
-      <description>As we know there are many vulnerabilities present in the Threads web application so to find out and exploit each of these vulnerabilities are the challenges on Threads application.
-Note: (hints are provided under the heading of each challenges in a small paragraph, so read them at your own risks). Here is the list of all the challenges which a user can solve:
-Challenge-1:(Self-XSS) Hint: Insert a payload under the name of the account (could be done when registering an account or changing the existing account name for the profile section.</description>
+      <description>As we know there are many vulnerabilities present in the Threads web application so to find out and exploit each of these vulnerabilities are the challenges on Threads application. We have categorized the vulnerabilities into 4 parts (low,medium,high,critical) on the basis of how it is going to effec your system.
+Note: (hint on how to solve the challenge is provided under the heading of each challenge in a small paragraph, so read them at your own risks).</description>
     </item>
     
     <item>
