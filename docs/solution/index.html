@@ -234,9 +234,9 @@
 <h3 id="hidden-directories">Hidden Directories</h3>
 <ol>
 <li>We can use <a href="https://github.com/maurosoria/dirsearch">Dirsearch tool</a>  to perform directory brute forcing on application to find the hidden end points of the application.</li>
-<li>You can install this tool by clicking on the dirsearch tool on the above point which will redirect you to the github page of that tool. Then  use this  command in your terminal <code>&quot;python3 dirsearch.py -u &lt;URL&gt; -e &lt;EXTENSIONS&gt;&quot;</code>. Example : &ldquo;python3 dirsearch.py -u http://localhost:3000 -e html,php&rdquo;.</li>
+<li>You can install this tool by clicking on the dirsearch tool on the above point which will redirect you to the github page of that tool. Then  use this  command in your terminal <code>python3 dirsearch.py -u &lt;URL&gt; -e &lt;EXTENSIONS&gt;</code>. Example : ** &ldquo;python3 dirsearch.py -u http://localhost:3000 -e html,php&rdquo;**.</li>
 <li>The http status code 200  is shown  on the directories like  /home , /management , /users/login.</li>
-<li>These can be accessed by using the endpoint after the domain name in the URL in your browser.Like &ldquo;http://localhost:3000/management&rdquo;.</li>
+<li>These can be accessed by using the endpoint after the domain name in the URL in your browser.Like <strong>http://localhost:3000/management</strong>.</li>
 <li>In http://localhost:3000/management a  page opens up where an admin user can only login.The hard-coded mail for the admin account is <code>test@test.com</code> .You have to check whether an account with this mail to login as admin exist in the application or not.</li>
 </ol>
 <h3 id="cross-site-request-forgerycsrf">Cross-site Request Forgery(CSRF)</h3>

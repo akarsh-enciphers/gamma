@@ -22,10 +22,10 @@ In this section we will talk about the  solution to all the vulnerabilities pres
 ### Hidden Directories
 
 1. We can use [Dirsearch tool](https://github.com/maurosoria/dirsearch)  to perform directory brute forcing on application to find the hidden end points of the application.
-2. You can install this tool by clicking on the dirsearch tool on the above point which will redirect you to the github page of that tool. Then  use this  command in your terminal `"python3 dirsearch.py -u <URL> -e <EXTENSIONS>"`. Example : "python3 dirsearch.py -u http://localhost:3000 -e html,php".
+2. You can install this tool by clicking on the dirsearch tool on the above point which will redirect you to the github page of that tool. Then  use this  command in your terminal ```python3 dirsearch.py -u <URL> -e <EXTENSIONS>```. Example : ** "python3 dirsearch.py -u http://localhost:3000 -e html,php"**.
 3. The http status code 200  is shown  on the directories like  /home , /management , /users/login.
-4. These can be accessed by using the endpoint after the domain name in the URL in your browser.Like "http://localhost:3000/management".
-5. In http://localhost:3000/management a  page opens up where an admin user can only login.The hard-coded mail for the admin account is `test@test.com` .You have to check whether an account with this mail to login as admin exist in the application or not.
+4. These can be accessed by using the endpoint after the domain name in the URL in your browser.Like **http://localhost:3000/management**.
+5. In http://localhost:3000/management a  page opens up where an admin user can only login.The hard-coded mail for the admin account is ```test@test.com``` .You have to check whether an account with this mail to login as admin exist in the application or not.
 
 ### Cross-site Request Forgery(CSRF)
 
