@@ -25,7 +25,7 @@ Stay tuned uptil then
 7.
 ![Alt text](/gamma/images/lab.png)
 8:
-![Alt text](./gamma/images/lab.png)
+![Alt text](gamma/images/selfxss2.png)
 9:
 ![Alt text](/gamma/images/lab.png "Title")
 10:
