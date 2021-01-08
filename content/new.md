@@ -73,7 +73,7 @@ Stay tuned uptil then
 ![Alt text](https://raw.githubusercontent.com/akarsh-enciphers/gamma/master/images/lab.png =250x)
 
 2100.
-![Alt text](https://raw.githubusercontent.com/akarsh-enciphers/gamma/master/images/lab.png =500x)
+![Alt text](https://raw.githubusercontent.com/akarsh-enciphers/gamma/master/images/lab.png=500x)
 
 3100.
 ![Alt text](https://raw.githubusercontent.com/akarsh-enciphers/gamma/master/images/lab.png =750x)
