@@ -56,7 +56,11 @@ Stay tuned uptil then
 ![Alt text](https://nmap.org/images/sitelogo.png)
 
 
+22.
+![alt text](https://nmap.org/images/sitelogo.png)
 
+23.
+![Alt text](https://github.com/akarsh-enciphers/gamma/blob/master/images/lab.png)
 
 
 

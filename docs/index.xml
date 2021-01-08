@@ -56,7 +56,7 @@ Low severity challenges Self-XSS  The self-xss is present in the name field of t
       
       <guid>https://akarsh-enciphers.github.io/gamma/new/</guid>
       <description>This is a page where we will tell you about what&amp;rsquo;s new coming in the next update Stay tuned uptil then
-1: 2: 2.1: 3: 4: 5: 6: 7. 8: 9: 10: 11: 12: 13. 14. 15. 16. 17. 18. 19. 20.   </description>
+1: 2: 2.1: 3: 4: 5: 6: 7. 8: 9: 10: 11: 12: 13. 14. 15. 16. 17. 18. 19. 20.       </description>
     </item>
     
     <item>
