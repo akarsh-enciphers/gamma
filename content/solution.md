@@ -19,7 +19,9 @@ In this section we will talk about the  solution to all the vulnerabilities pres
 ```
 ><script>alert(1)</script>
 ```
+![Text]()
 3. Click on update to update new credentials. After this you will see that the entered XSS payload getting  executed on your browser and it will keep getting executed whenever you will visit you profile section through the icon given on home page.
+![Text]()
 
 ### Hidden Directories
 
