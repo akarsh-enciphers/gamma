@@ -64,7 +64,8 @@ Stay tuned uptil then
 
 
 
-
+100.
+![Alt text](https://raw.githubusercontent.com/akarsh-enciphers/gamma/master/images/lab.png)
 
 
 
