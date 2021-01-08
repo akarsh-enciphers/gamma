@@ -13,7 +13,10 @@ In this section we will talk about the  solution to all the vulnerabilities pres
 ### Self-XSS
 
 1. The self-xss is present in the name field of the profile section.So go to your profile first.
-2. In the name field  enter a XSS payload .Like **```><script>alert(1)</script>```**.
+2. In the name field  enter a XSS payload .Like: 
+```
+><script>alert(1)</script>
+```
 3. Click on update to update new credentials. After this you will see that the entered XSS payload getting  executed on your browser and it will keep getting executed whenever you will visit you profile section through the icon given on home page.
 
 ### Hidden Directories
