@@ -49,7 +49,7 @@ Stay tuned uptil then
 19.
 ![Alt text](http://gamma/images/lab.png)
 20.
-![Alt text](./gamma/images/lab.png)
+![Alt text](lab.png)
 
 
 
