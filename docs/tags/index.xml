@@ -6,61 +6,6 @@
     <description>Recent content in Tags on  Threads</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2020. All rights reserved.</copyright>
-    <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://akarsh-enciphers.github.io/gamma/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>development</title>
-      <link>https://akarsh-enciphers.github.io/gamma/tags/development/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://akarsh-enciphers.github.io/gamma/tags/development/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>go</title>
-      <link>https://akarsh-enciphers.github.io/gamma/tags/go/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://akarsh-enciphers.github.io/gamma/tags/go/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>golang</title>
-      <link>https://akarsh-enciphers.github.io/gamma/tags/golang/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://akarsh-enciphers.github.io/gamma/tags/golang/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hugo</title>
-      <link>https://akarsh-enciphers.github.io/gamma/tags/hugo/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://akarsh-enciphers.github.io/gamma/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>templates</title>
-      <link>https://akarsh-enciphers.github.io/gamma/tags/templates/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://akarsh-enciphers.github.io/gamma/tags/templates/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>themes</title>
-      <link>https://akarsh-enciphers.github.io/gamma/tags/themes/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://akarsh-enciphers.github.io/gamma/tags/themes/</guid>
-      <description></description>
-    </item>
-    
+    <copyright>&amp;copy; 2020. All rights reserved.</copyright><atom:link href="https://akarsh-enciphers.github.io/gamma/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

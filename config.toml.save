@@ -61,9 +61,6 @@ paginate = 10
 [social]
   # Link your social networking accouns to the side menu
   # by entering your username or ID.
-  twitter = "*"
-  facebook = "*"
-  instagram = "*"
   github = "https://github.com/enciphers"
-  stackoverflow = "*"
-  linkedin = "*"
+
+
