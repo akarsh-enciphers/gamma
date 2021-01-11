@@ -101,3 +101,30 @@ Stay tuned uptil then
 ![<img src:"https://raw.githubusercontent.com/akarsh-enciphers/gamma/master/images/lab.png" alt="jadu" width="500" height="500"> ](https://raw.githubusercontent.com/akarsh-enciphers/gamma/master/images/lab.png)
 
 
+asd
+![bla](/static/img/selfxss1.png)
+
+ads
+![blu](/static/selfxss1.png)
+
+adp
+![blu](/assests/selfxss1.png)
+
+xds
+![blu](resources/_gen/assests/selfxss1.png)
+
+zds
+![blu](resources/assests/selfxss1.png)
+
+hds
+![blu](/images/selfxss1.png)
+
+vds
+![blu](resources/_gen/images/selfxss1.png)
+
+ds
+![blu](resources/images/selfxss1.png)
+
+
+
+
