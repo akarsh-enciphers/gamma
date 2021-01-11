@@ -13,9 +13,9 @@ Here is the list of all the challenges which a user can solve:
 
 ### Self XSS
 
-**About**: Reflected attacks are those where the injected script is reflected off the web server, such as in an error message, search result, or any other response that includes some or all of the input sent to the server as part of the request. Reflected attacks are delivered to victims via another route, such as in an e-mail message, or on some other website. When a user is tricked into clicking on a malicious link, submitting a specially crafted form, or even just browsing to a malicious site, the injected code travels to the vulnerable web site, which reflects the attack back to the user’s browser. The browser then executes the code because it came from a “trusted” server.  [Tap to learn more](https://portswigger.net/web-security/cross-site-scripting/reflected) 
+**About**: It  is a client side injection attack. It is one of a social engineering account which is used to gain control of the victim's account. It is mainly present in the fields where an user can input something on his own into that filed like search bar, comment section or feedback section etc. It occurs due to improper validation present on these fields which do not proper validate user input text. What an attacker does is that he sends malicious javascript code to victim's browser through social engineering to gain control of his account. If the victim accidentally clicks on this malicious code then it will get executed into his web browser developer console and information like cookies will get shared to the attacker for the victim's account   [Tap to learn more](https://portswigger.net/web-security/cross-site-scripting/reflected) 
 
-**Hint**:  Insert a payload under the name of the account (could be done when registering an account or changing the existing account name for the profile section.
+**Hint**: Self-XSS is present in the profile section of the application. You need to insert a javascript payload to exploit this vulnerability. 
 
 
 ### Hidden Directories
