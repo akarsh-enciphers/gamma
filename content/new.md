@@ -111,19 +111,19 @@ adp
 ![blu](/assests/selfxss1.png)
 
 xds
-![blu](resources/_gen/assests/selfxss1.png)
+![blu](/resources/_gen/assests/selfxss1.png)
 
 zds
-![blu](resources/assests/selfxss1.png)
+![blu](/resources/assests/selfxss1.png)
 
 hds
 ![blu](/images/selfxss1.png)
 
 vds
-![blu](resources/_gen/images/selfxss1.png)
+![blu](/resources/_gen/images/selfxss1.png)
 
 ds
-![blu](resources/images/selfxss1.png)
+![blu](/resources/images/selfxss1.png)
 
 
 
