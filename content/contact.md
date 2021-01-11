@@ -20,9 +20,9 @@ Here is the list of all the challenges which a user can solve:
 
 ### Hidden Directories
 
-**About**: When a security analyst performing website penetration testing the initial step should be finding hidden directories of a vulnerable website.These hidden web directories are essential because they can give useful information i.e. potential attack vectors that would not be visible on the public facing website.One of the ways to achieve this is by attempting brute-forcing site structure that includes directories and files in websites. 
+**About**: One of the initial step in penetration testing is to find the hidden directories in the web application .These hidden web directories are essential because they can give useful information i.e. potential attack vectors that would not be visible on the public facing website.One of the ways to achieve this is by attempting brute-forcing site structure that includes directories and files in websites. 
 
-**Hint**: There is a directory (/management) where we can login as admin with the hardcoded mail which is `test@test.com` . To Brute Force all the directories you can take help of tool Dirsearch. [Click to download the tool](https://github.com/maurosoria/dirsearch)
+**Hint**: There are many hidden directories present in Threads application one consist of an admin section where an admin user can login. You can find the hidden directories with the help of following tools like DIRSEARCH, FUZZ dir etc.
 
 ### Cross-site Request Forgery(CSRF)
 
